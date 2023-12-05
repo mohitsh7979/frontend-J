@@ -1,0 +1,38 @@
+body{
+
+    background-color: black;
+    height: 1000px;
+}
+
+
+.header{
+
+    height: 100px;
+    border: 2px solid white;
+    background-color: yellow;
+    text-align: center;
+}
+
+a{
+    font-size: 40px;
+    margin: 40px;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.box{
+
+    height: 500px;
+    font-size: 20px;
+    /* padding: 80px; */
+    background-color: yellow;
+    text-align: justify;
+    padding: 50px;
+    /* margin-left: 100px;
+    margin-top: 300px; */
+    background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
+    background-repeat: no-repeat;
+    border: 2px solid yellow;
+    background-size: cover;
+    background-attachment: fixed;
+}

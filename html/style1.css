@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    height: 200vh;
+}
+
+.box{
+
+    height: 100px;
+    width: 700px;
+    border: 2px solid yellow;
+    background-color: black;
+    /* margin: 100px 5px; */
+    /* margin-left: 50px;
+    margin-top: 50px; */
+    color: yellow;
+   /* padding: 10px; */
+
+   margin: 10px 170px;
+   padding: 30px;
+   text-align: justify;
+   background:linear-gradient(180deg,red,blue,yellow);
+   font-size: 20px;
+  
+}
+
+#box-2{
+
+    color: black;
+    border-radius: 45px 0px 90px 0px;
+    background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
