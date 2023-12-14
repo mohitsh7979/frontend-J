@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* box-sizing: border-box; */
+        }
+
+        .left {
+
+            background-color: #f44336;
+            width: 20%;
+            height: 100vh;
+            position: fixed;
+
+        }
+
+        .heading {
+
+            padding: 50px 25px;
+        }
+
+        .heading h1 {
+
+            font-weight: 200;
+            color: white;
+        }
+
+        .menu ul li {
+
+            list-style: none;
+            margin: 20px 25px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .right {
+
+            position: absolute;
+            right: 0px;
+            width: 80%;
+        }
+
+        .title {
+
+            padding: 100px 80px;
+        }
+
+        .title h1 {
+
+            font-size: 70px;
+            font-weight: 200;
+        }
+
+        .title h2 {
+            font-size: 50px;
+            font-weight: 400;
+            margin-top: 40px;
+        }
+
+        .images {
+
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px 80px;
+
+        }
+
+        img {
+
+            width: 48%;
+            margin: 5px;
+
+        }
+
+        .services {
+
+            margin: 50px 75px;
+
+        }
+
+        .services h1 {
+
+            margin: 50px 0px;
+            font-size: 50px;
+        }
+
+
+        .services p {
+
+            font-size: 18px;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+
+        .menu ul li a {
+
+            text-decoration: none;
+            color: white;
+        }
+
+        .images img:hover {
+
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        .packages{
+            
+            margin: 50px 75px;
+
+
+        }
+
+        .basic{
+
+            border: 2px solid black;
+            width: 48%;
+            margin: 5px;
+        }
+
+        .packages li{
+
+            list-style: none;
+        }
+
+        .pro{
+            border: 2px solid black;
+            width: 48%;
+            margin: 5px;
+        }
+
+        .packages-box{
+              display: flex;
+              text-align: center;
+            
+            
+        
+        }
+
+        .packages-box ul li{
+
+           
+             border-bottom: 1px solid gray;
+             padding: 40px;
+            }
+
+        .packages-box button{
+
+            padding: 20px 30px;
+            border: none;
+            background-color: #f44336;
+            color: white;
+        }   
+        
+        #basic{
+
+            background-color: rgb(158, 155, 155);
+            
+        }
+
+        #pro{
+
+            background-color: #f44336;
+        }
+
+        .packages h1,p{
+
+            margin: 50px 0px;
+        }
+ 
+    </style>
+</head>
+
+<body>
+
+    <div class="left">
+        <div class="heading">
+            <h1>Company <br> Name</h1>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#designers">Designers</a></li>
+                <li><a href="">Packages</li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right">
+
+        <div class="title" id="home">
+
+            <h1>Interior Design</h1>
+            <h2>Showcase</h2>
+
+        </div>
+
+        <div class="images" id="showcase">
+            <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="">
+        </div>
+
+        <div class="services" id="services">
+            <h1>Services</h1>
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <br> <br>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+
+        <div class="services" id="designers">
+            <h1>Designers</h1>
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <br> <br>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+
+
+        <div class="packages">
+            <h1>Packages.</h1>
+            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure</p>
+
+            <div class="packages-box">
+                <div class="basic">
+                    <ul>
+                        <li id="basic">Basic</li>
+                        <li>Floorplanning</li>
+                        <li>10 hours support</li>
+                        <li>Photography</li>
+                        <li>20% furniture discount</li>
+                        <li>Good deals</li>
+                        <li>$ 199 <br>
+                            per room
+                        </li>
+                        <li>
+                            <button>Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pro">
+                    <ul>
+                        <li id="pro">Pro</li>
+                        <li>Floorplanning</li>
+                        <li>10 hours support</li>
+                        <li>Photography</li>
+                        <li>50% furniture discount</li>
+                        <li>Good deals</li>
+                        <li>$ 249 <br>
+                            per room
+                        </li>
+                        <li>
+                            <button>Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
