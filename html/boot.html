@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .carousel-item img {
+
+            height: 700px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                      <label for="">Username</label>
+                                        <input type="text" class="form-control m-2" placeholder="username">
+                                        <input type="email" class="form-control m-2" placeholder="email">
+                                        <input type="password" class="form-control" placeholder="password">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://images.unsplash.com/photo-1660866838821-0c12213703df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&w=1000&q=80"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/close-up-portrait-photographer-with-vintage-camera_343059-1232.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container border border-primary bg-dark text-center p-2 mt-2">
+        <h1 class="text-light">Products</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col border border-dark p-3">
+                Lorem, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium, eum sit
+                neque deleniti illo voluptatem pariatur deserunt distinctio labore quisquam beatae est! Quis molestiae
+                in a modi, dolor reiciendis magni impedit assumenda repudiandae. Nulla amet sapiente ducimus illum atque
+                veniam? Veniam quam nobis pariatur, nostrum illum ipsam accusantium est!
+
+                <div class="container">
+                    <button class="btn btn-warning w-100">Submit</button>
+                </div>
+            </div>
+            <div class="col border border-dark p-3">
+                Lorem, ipsum.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis fuga rerum aliquam tempora quod
+                deleniti ipsum illo eveniet? Neque non, tempora facere omnis consequatur ipsa voluptatum quo optio dicta
+                ad nemo repellat, similique reprehenderit quod corporis atque cum voluptatibus iure quasi blanditiis
+                unde officia deleniti nostrum! Magnam minus deleniti rem.
+
+                <div class="container">
+                    <button class="btn btn-warning w-100">Submit</button>
+                </div>
+
+            </div>
+            <div class="col border border-dark p-3">
+                Lorem, ipsum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dignissimos, voluptatem et quaerat ex
+                quas! Eos porro ab numquam quo saepe repellat laborum perspiciatis aliquid amet similique quis, optio a
+                sit cumque expedita, quod ullam! Distinctio quod eaque hic. Nulla fugit quaerat doloribus error placeat
+                explicabo reprehenderit cupiditate aut amet?
+
+                <div class="container">
+                    <button class="btn btn-warning w-100">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container border border-primary bg-dark text-center p-2 mt-2">
+        <h1 class="text-light">Contact Form</h1>
+    </div>
+
+    <div class="container bor">
+        <form class="row g-3 m-5">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
