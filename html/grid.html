@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
-        .container{
+
+        .container {
 
             height: 100vh;
             background-color: black;
             display: grid;
-            justify-items: center;
+
             /* place-items: center; */
             /* justify-items: center;
             align-content: center; */
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(4, auto);
             /* grid-template-columns: repeat(4,auto); */
             /* grid-template-rows: 1fr 5fr 1fr; */
         }
 
 
-        .item{
+        .item {
 
-            height: 200px;
-            width: 200px;
+
+
             background-color: yellow;
             margin: 5px;
         }
@@ -72,8 +74,50 @@
             height: 97%;
         } */
 
+
+        @media (max-width:400px) {
+
+            .container {
+
+                grid-template-columns: repeat(1, auto);
+
+            }
+
+            .item {
+
+                background-color: green;
+            }
+
+        }
+
+        @media (min-width:401px) and (max-width:700px) {
+
+            .container {
+
+                grid-template-columns: repeat(2, auto);
+            }
+
+            .item {
+
+                background-color: red;
+            }
+        }
+
+        @media (min-width:701px) and (max-width:1400px) {
+
+            .container {
+
+                grid-template-columns: repeat(3, auto);
+            }
+
+            .item {
+
+                background-color: pink;
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- <div class="container">
             <div class="item"></div>
@@ -96,6 +140,16 @@
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
     </div>
 </body>
+
 </html>
