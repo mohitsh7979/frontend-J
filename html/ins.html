@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+
+            margin-left: 200px;
+        }
+
+        .box::before {
+
+            content: "";
+            border: 1px solid black;
+            position: absolute;
+            width: 50px;
+            left: 150px;
+            top: 15px;
+
+        }
+
+        .box::after {
+
+            content: "";
+            border: 1px solid black;
+            position: absolute;
+            width: 50px;
+            top: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" placeholder="usernname" class="inp">
+    <input type="text" placeholder="father name" class="inp">
+    <input type="text" placeholder="gender" class="inp">
+    <input type="text" placeholder="address" class="inp">
+    <input type="text" placeholder="age" class="inp">
+    <button id="btn">Submit</button>
+
+
+    <script>
+
+
+        // document.getElementById("btn").onclick = function () {
+
+        //     let l = document.getElementsByClassName("inp");
+        //     console.log(l.length)
+
+        // for (let i = 0; i < l.length; i++) {
+
+        //     let a = l[i].value;
+        //     console.log(a)
+        // }
+
+
+        // for(let i of l){
+
+        //     console.log(i.value)
+        // }
+
+        // }
+
+        // a = [10,20,30,40,50].value;
+
+
+        document.querySelector("#btn").onclick = function(){
+
+            let a = document.querySelectorAll(".inp");
+            // console.log(a.value)
+            for(let i of a){
+
+                console.log(i.value)
+            }
+
+            
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

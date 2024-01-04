@@ -60,6 +60,34 @@
 
     </div>
 
+
+
+
+
+    <select name="" id="select">
+        <option value="">None</option>
+        <option value="html">Html</option>
+        <option value="css">css</option>
+        <option value="javascript">Java Script</option>
+    </select>
+
+    <p id="p"></p>
+
+    <script>
+
+        document.getElementById("select").onclick = function(){
+
+           let a = document.getElementById("select").value;
+           if(a=="javascript"){
+
+            document.getElementById("p").innerHTML = "This is my text"
+
+           }
+           console.log(a)
+        }
+            
+   
+    </script>
     
 </body>
 </html>
